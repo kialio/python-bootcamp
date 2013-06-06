@@ -1,0 +1,92 @@
+<!--#include virtual="/conferences/pythonbootcamp/2013/inc/html/header.html"-->
+        <title>GSFC Python Boot Camp 2013</title>
+<!--#include virtual="/conferences/pythonbootcamp/2013/inc/html/banners-nasaonly.html"-->
+<!--#include virtual="/conferences/pythonbootcamp/2013/inc/html/nav.html"-->
+
+
+<h1 id="pythoninstallationinstructions">Python Installation Instructions</h1>
+
+<p>This page describes how to install Python and the other packages (Numpy, Scipy, IPython, Matplotlib) required for the course for Mac OS X, Linux and Windows.</p>
+
+<h1 id="linux">Linux</h1>
+
+<p>In Linux, the installation instructions are pretty straightforward. Assuming that you are running Debian or Ubuntu, you just need to execute the following command in the terminal:</p>
+
+<pre><code>sudo apt-get install python-numpy python-scipy python-matplotlib ipython-notebook
+</code></pre>
+
+<p>For Fedora users, you can use the <em>yum</em> tool.</p>
+
+<h1 id="macosxwindows">Mac OS X, Windows</h1>
+
+<h2 id="ifyouareaffiliatedwithanacademicinstitution">If you are affiliated with an academic institution</h2>
+
+<p>Then the easiest way to install Python and the other packages is to <a href="https://www.enthought.com/products/canopy/academic/">request an academic license and download the Enthought Canopy Python distribution</a>. Enthought includes all the packages we will use during the course. </p>
+
+<p>The <a href="https://www.enthought.com/downloads/">installation instructions are available here</a>, which has installers for Mac OS X and Windows.</p>
+
+<p>Note that you need the academic license in order to install the 64-bit (recommended) version. The 32-bit version is free for all.</p>
+
+<h2 id="ifyouarenotaffiliatedwithanuniversity">If you are <em>not</em> affiliated with an university</h2>
+
+<p>This is the case for example for <a href="http://www.nasa.gov/centers/goddard/home/index.html">GSFC</a> employees and many GSFC postdocs. In this case, we recommend downloading and installing the <a href="http://continuum.io/downloads.html">Anaconda Python distribution</a>. The <a href="http://docs.continuum.io/anaconda/index.html">installations instructions are available here</a>. </p>
+
+<p>Just download the installer and execute it. </p>
+
+<p>Anaconda includes most of the packages we will use and it is pretty easy to install additional packages if required.</p>
+
+<h2 id="iftheabovetwomethodsdonotworkforosx">If the above two methods do not work for OS X</h2>
+
+<h3 id="themacportsway">The MacPorts way</h3>
+
+<p>You can try installing everything using <a href="http://www.macports.org">MacPorts</a>. First download and install macports and then issue the following command in a terminal:</p>
+
+<pre><code>sudo port install py27-scipy +gcc47
+</code></pre>
+
+<p>(the reason to use the &#8216;variant&#8217; for scipy is that otherwise it will try to build some other version of gcc/gfortran, probably unnecessarily duplicating the compiler and taking a lot longer to build.)</p>
+
+<p>Afterwards, issue the command</p>
+
+<pre><code>sudo port install py27-numpy py27-matplotlib py27-pyfits py27-pywcs py27-ipython py27-pytools py27-pip
+</code></pre>
+
+<p>and:</p>
+
+<pre><code>sudo port install py27-zmq py27-tornado py27-nose
+</code></pre>
+
+<p>(the above dependencies are required in order to run IPython notebook.) </p>
+
+<p>Finally, run:</p>
+
+<pre><code>sudo port select --set ipython ipython27
+</code></pre>
+
+<p>in order to select the MacPorts IPython as the default interpreter.</p>
+
+<p>The advantage of this method is that it easy to do. The downsides:
+* It can take a couple of hours to finish the installation depending on your machine and internet connection, since macports will download and <em>compile</em> everything as it goes.
+* If you like having the bleeding edge versions, note that it can take a while for them to be released on macports
+* Finally, macports can create conflicts between different python interpreters installed in your system</p>
+
+<h3 id="usingapplespythoninterpretedandpip">Using Apple&#8217;s Python interpreted and pip</h3>
+
+<p>If you feel adventurous, you can use Apple&#8217;s builtin python interpreter and install everything using pip. Please <a href="http://astropython.blogspot.com/2012/08/how-to-install-ipython-scipy-and.html">follow the instructions described in this blog</a>.</p>
+
+<h1 id="ifyourunintotrouble">If you run into trouble</h1>
+
+<p>Feel free to contact us.</p>
+
+<p>Feel free to contact us. </p>
+<p><blockquote>
+pythonbootcamp@bigbang.gsfc.nasa.gov
+</blockquote></p>
+
+<h4 id="changelog">Changelog</h4>
+
+<p>May 30th 2013: created by Rodrigo Nemmen.</p>
+
+<p>Jun 6th 2013: incorporated MacPorts tricks suggested by David P. Friedlander.</p>
+
+<!--#include virtual="/conferences/pythonbootcamp/2013/inc/html/footer.html"-->

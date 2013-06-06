@@ -1,0 +1,456 @@
+
+/*	Fermi Website Global CSS				*/
+/*	Name: global.css						*/
+/*	Author: J.D. Myers (jd.myers@nasa.gov)	*/
+
+body {
+	background: #000 url('../img/star_bkgd.jpg') repeat left top;
+	color: #2a2a2a;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+pre {
+	font-family: monospace;
+	white-space: pre;
+}
+
+p {
+	padding: 7px 0;
+}
+
+a {
+	color: #0061aa;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #900;
+    text-decoration: underline;
+}
+
+h1 {
+	clear: left;
+	margin: 14px 0;
+	color: #595959;
+	background: transparent;
+	font-size: 35px;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #999;
+}
+
+h2 {
+	clear: left;
+	margin: 14px 0;
+	color: #0b427f;
+	font-size: 21px;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3, h4, h5, h6 {
+	clear: left;
+	margin: 14px 0;
+	color: #2a2a2a;
+	font-size: 14px;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+table {
+	margin: 14px 0;
+}
+
+table, tr, th, td {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2a2a2a;
+	text-align: left;
+	padding: 7px;
+	vertical-align: top;
+}
+
+th, b, strong {
+	font-weight: bold;
+}
+
+table.styled-table {
+	border-right: 1px solid #2a2a2a;
+	border-bottom: 1px solid #2a2a2a;
+}
+
+table.styled-table th {
+	background: #d0d0d0;
+}
+
+table.styled-table th,
+table.styled-table td {
+	border-left: 1px solid #2a2a2a;
+	border-top: 1px solid #2a2a2a;
+}
+
+em, i {
+	font-style: italic;
+}
+
+ul, ol {
+	margin: 7px 0;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2a2a2a;
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li {
+	margin: 4px 0 4px 25px;
+	text-align: left;
+}
+
+ul ul {
+	list-style: circle;
+}
+
+ul ul ul {
+	list-style: square;
+}
+
+dl {
+	margin: 7px 0em;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2a2a2a;
+}
+
+dt {
+	margin: 4px 0;
+}
+
+dd {
+	margin: 4px 0 4px 35px;
+}
+
+blockquote {
+	padding: 0 28px;
+}
+
+sub {
+	padding: 0 2px;
+	font-size: 10px;
+	line-height: 1;
+	vertical-align: sub;
+}
+
+sup {
+	padding: 0 2px;
+	font-size: 10px;
+	line-height: 1;
+	vertical-align: super;
+}
+
+/* Skip Navigation */
+
+#skip {
+	position: absolute;
+	left: -999px;
+	width: 990px;
+}
+
+/* Clear */
+
+.clear {
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0;
+}
+
+/* Page Container */
+
+#page-container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 8px 0;
+	background: transparent url('../img/top_bkgd.jpg') no-repeat center top;
+	text-align: center;
+	overflow: visible;
+	z-index: 1;
+}
+
+/* NASA Banner Styles */
+
+#nasa-banner {
+	clear: both;
+	width: 952px;
+	height: 98px;
+	margin: 0 auto;
+	color: #fdfdfd;
+	background: #2e2e2e;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#nasa-banner a {
+	color: #fdfdfd;
+}
+
+#nasa-banner a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+#nasa-banner .nasa-logo {
+	float: left;
+	width: 140px;
+	height: 98px;
+	background: #1d1d1d;
+	text-align: center;
+}
+
+#nasa-banner #nasa-affiliation {
+	float: left;
+	width: 522px;
+	height: 98px;
+	background: #2e2e2e;
+	text-align: left;
+}
+
+#nasa-banner #nasa-affiliation h1 {
+	margin: 0;
+	padding: 31px 0 3px 13px;
+	border: none;
+	color: #fdfdfd;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-shadow: none;
+}
+
+#nasa-banner #nasa-affiliation h2 {
+	margin: 0;
+	padding-left: 13px;
+	border: none;
+	color: #fdfdfd;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: normal;
+	letter-spacing: normal;
+}
+
+/* Main Navigation */
+
+#nav {
+	clear: both;
+	width: 952px;
+	height: 35px;
+    margin: 0 auto;
+    background: #595959 url('../img/unselected_bkgd.png') repeat-x left top;
+}
+
+#nav ul {
+	margin: 0;
+}
+
+#nav li.nav1 {
+	float: left;
+	width: 158px;
+	border-right: 1px solid #3a3a3a;
+}
+
+#nav li.nav2 {
+	float: left;
+	width: 158px;
+	border-right: 1px solid #3a3a3a;
+}
+
+#nav li.nav3 {
+	float: left;
+	width: 158px;
+	border-right: 1px solid #3a3a3a;
+}
+
+#nav li.nav4 {
+	float: left;
+	width: 158px;
+	border-right: 1px solid #3a3a3a;
+}
+
+#nav li.nav5 {
+	float: left;
+	width: 158px;
+	border-right: 1px solid #3a3a3a;
+}
+
+#nav li.nav6 {
+	float: left;
+	width: 157px;
+}
+
+#nav li {
+	margin: 0;
+	background: #595959 url('../img/unselected_bkgd.png') repeat-x left top;
+	text-align: center;
+	list-style: none;
+}
+
+#nav a {
+	display: block;
+	padding: 10px 0;
+	color: #fff;
+	background: none;
+	font-size: 14px;
+	line-height: 1;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+#nav li a:hover,
+#nav li a:active {
+	background: #0b427f url('../img/selected_bkgd.png') repeat-x left top;
+}
+
+/* Content Wrapper */
+
+#content-wrapper {
+	clear: both;
+    width: 928px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 14px 7px 14px;
+    color: #2a2a2a;
+	background: #f8f8f8;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 952px;
+	height: 98px;
+	margin: 0 auto;
+	color: #a3a3a3;
+	background: #2e2e2e;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#footer a {
+	color: #a3a3a3;
+}
+
+#footer a:hover {
+    color: #a3a3a3;
+    text-decoration: underline;
+}
+
+#footer .nasa-logo {
+	float: left;
+	width: 140px;
+	height: 98px;
+	background: #1d1d1d;
+	text-align: center;
+}
+
+#footer #goddard-signature {
+	float: left;
+	width: 242px;
+	height: 98px;
+	padding: 15px;
+}
+
+#footer #contacts {
+	float: left;
+	width: 270px;
+	height: 98px;
+}
+
+#footer #notices {
+	float: left;
+	width: 269px;
+	height: 98px;
+}
+
+#footer #contacts ul,
+#footer #notices ul {
+	margin: 15px 0 0 0;
+	color: #a3a3a3;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: normal;
+	list-style: none;
+}
+
+#footer #contacts ul li,
+#footer #notices ul li {
+	margin: 5px 0;
+	list-style: none;
+}
+
+/* Form Styles */
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+fieldset#contact-info label {
+	float: left;
+	width: 100px;
+	text-align: left;
+}
+
+/* Misc Styles */
+
+.alert {
+	margin: 12px auto;
+	padding: 6px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	color: #900;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.justify {
+	text-align: justify;
+}

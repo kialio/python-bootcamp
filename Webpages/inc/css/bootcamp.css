@@ -1,0 +1,12 @@
+
+/*	Fermi Website Global CSS				*/
+/*	Name: fermi.css							*/
+/*	Author: J.D. Myers (jd.myers@nasa.gov)	*/
+
+/* Reset Styles */
+
+@import url(reset.css);
+
+/* Global Styles */
+
+@import url(global.css);
