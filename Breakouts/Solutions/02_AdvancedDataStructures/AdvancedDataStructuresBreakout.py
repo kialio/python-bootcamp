@@ -1,3 +1,6 @@
+# First let's copy over the data from airline.py
+
+# dict holding airport codes and names
 airports = {"DCA": "Washington, D.C.", "IAD": "Dulles", "LHR": "London-Heathrow", \
             "SVO": "Moscow", "CDA": "Chicago-Midway", "SBA": "Santa Barbara", "LAX": "Los Angeles",\
             "JFK": "New York City", "MIA": "Miami", "AUM": "Austin, Minnesota"}
@@ -9,20 +12,28 @@ flights = [("Southwest",145,"DCA",1,6.00),("United",31,"IAD",1,7.1),("United",30
            ("American", 1,"JFK",12,11.3),("USAirways", 8,"MIA",20,13.1),("United",2032,"MIA",21,15.1),\
            ("SpamAir",1,"AUM",42,14.4)]
 
+# If we sort the flight list of tuples, then it will sort on the first element in each tuple
 flights.sort()
 
-header = "Flight\t\tDestination\t\tGate\tTime"
-tableline = "-"*52
+header = "Flight\t\tDestination\t\tGate\tTime" # Note the use of tabs
+tableline = "-"*52 # Quick way for creating a long string of the same character
 
 print header
 print tableline
 for flight in flights:
-    dest = airports[flight[2]]
-    dest += " "*(20-len(dest))
+    dest = airports[flight[2]] # flight[2] is the key to get the correct value of airport
+    dest += " "*(20-len(dest)) # padding the destination with spaces so that the tables lines up right
     print flight[0] + " " + str(flight[1]) + "\t" + dest + "\t" + str(flight[3]) + "\t" + str(flight[4])
 
+# Now we need to sort by flight times. What I've done here is use a list comprehension to create
+# a new list, which puts the flight time at the beginning of each tuple instead of the end. Then we
+# can sort on it in the same way we did the last time.
+    
 flights2 = [(flight[4], flight[0], flight[1], flight[2], flight[3]) for flight in flights]
 flights2.sort()       
+
+# Repeat the same procedure, except now the indices have changed because we re-arranged the tuples in
+# the list
 
 print header
 print tableline
