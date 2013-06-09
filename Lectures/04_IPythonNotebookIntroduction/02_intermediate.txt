@@ -14,6 +14,11 @@ Intermediate Topics (beyond basics)
 
 - go over organization on whiteboard (back to 00_overview.txt)
 
+-- qtconsole
+-- notebook
+-- console
+
+
 
 Qt Console specific
 -------------------

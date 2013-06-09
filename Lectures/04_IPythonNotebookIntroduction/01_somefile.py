@@ -14,3 +14,4 @@ def bar():
     a = 0
     return 1. / a # bug here!
 
+

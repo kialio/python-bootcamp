@@ -8,3 +8,5 @@ You can [watch the video](http://www.youtube.com/watch?v=oPM--1R1tTU) of this
 talk, or find the accompanying resources as well as all of the other talks
 which were given at the [UC Berkeley Python
 bootcamp](http://www.pythonbootcamp.info/agenda) in August 2012.
+
+Updates by Jeremy Perkins for the GSFC 2013 python bootcamp are included.
