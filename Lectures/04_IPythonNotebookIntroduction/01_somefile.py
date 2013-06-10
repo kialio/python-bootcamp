@@ -15,3 +15,5 @@ def bar():
     return 1. / a # bug here!
 
 
+print "Hello Class"
+foo()
