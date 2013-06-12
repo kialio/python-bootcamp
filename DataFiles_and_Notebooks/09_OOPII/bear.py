@@ -25,15 +25,3 @@ class Bear:
         # dont really need to close because Python will do the garbage collection
         #  for us. but it cannot hurt to be graceful here.
         self.logf.close()
-
-    def __str__(self):
-        return " name = %s bear number = %i (population %i)" % \
-              (self.name, self.my_num,Bear.bear_num)
-        
-"""
-print Bear.__doc__
-print Bear.__name__
-print Bear.__module__
-print Bear.__bases__
-print Bear.__dict__
-"""
