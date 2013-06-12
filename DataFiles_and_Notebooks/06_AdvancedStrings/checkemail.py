@@ -1,7 +1,3 @@
-"""
-  PYTHON BOOT CAMP EXAMPLE; 
-    created by Josh Bloom at UC Berkeley, 2010,2012 (ucbpythonclass+bootcamp@gmail.com)
-"""
 import string
 
 ## let's only allow .com, .edu, and .org email domains
