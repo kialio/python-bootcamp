@@ -27,3 +27,5 @@
 *.maf
 *.mtc
 *.mtc0
+.ipynb_checkpoints
+Python_and_NASA_logos.m4v
